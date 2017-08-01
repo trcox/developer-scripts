@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for D in `find * -maxdepth 0 -type d`
+do
+  cd "$D"
+  echo "$PWD"
+  git branch "$1"
+  git checkout "$1"
+  git branch --set-upstream-to=origin/"$1" "$1"
+  cd ..
+done

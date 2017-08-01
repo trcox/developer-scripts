@@ -1,0 +1,6 @@
+while read p
+do
+    echo "https://github.com/trcox/${p}.git"
+    git clone "https://github.com/trcox/${p}.git"
+done < "$1"
+

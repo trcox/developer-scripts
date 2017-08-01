@@ -1,0 +1,8 @@
+CURRENT="$PWD"
+while read p
+do
+    echo "${p}"
+    cd $p && git pull
+    cd "$CURRENT"
+done < "$1"
+
