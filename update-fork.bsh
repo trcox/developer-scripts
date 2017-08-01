@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# based from: https://stackoverflow.com/questions/520650/make-an-existing-git-branch-track-a-remote-branch
+
 cd "$1"
 
 # Add the remote, call it "upstream":
